@@ -1,5 +1,7 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+import matplotlib.pyplot as plt
+import numpy as np
 
-def members(request):
-    return HttpResponse("Hello world!")
+ypoints = np.array([3, 8, 1, 10])
+
+plt.plot(ypoints, marker = 'o')
+plt.show()
