@@ -1,30 +1,15 @@
-a = [23,4,42,4]
+import numpy as np
+import matplotlib.pyplot as plt
 
-def sum_arr(a):
-  out0 = 0
-  for i in a:
-      out0= out0 + i
+x = np.array([80, 85, 90, 95, 100, 105, 110, 115, 120, 125])
+y = np.array([240, 250, 260, 270, 280, 290, 300, 310, 320, 330])
 
-  return out0
-  
+plt.title("Sports Watch Data")
+plt.xlabel("Average Pulse")
+plt.ylabel("Calorie Burnage")
 
+plt.plot(x, y)
 
-out = sum_arr(a)
-print(out)
+plt.grid()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+plt.show()
