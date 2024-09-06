@@ -1,15 +1,16 @@
-import numpy as np
-import matplotlib.pyplot as plt
 
-x = np.array([80, 85, 90, 95, 100, 105, 110, 115, 120, 125])
-y = np.array([240, 250, 260, 270, 280, 290, 300, 310, 320, 330])
+def finder5(adad):
+  adad_str = str(adad)
+  tedad =0
+  for x in range(len(adad_str)):
+    if adad_str[x] == "5":
+      tedad=tedad+1
 
-plt.title("Sports Watch Data")
-plt.xlabel("Average Pulse")
-plt.ylabel("Calorie Burnage")
+  return tedad     
 
-plt.plot(x, y)
+taded_kol =0
 
-plt.grid()
+for i in range(1,1001):
+   taded_kol =taded_kol+ finder5(i)
 
-plt.show()
+print(taded_kol)
