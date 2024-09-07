@@ -1,16 +1,11 @@
+numS = int(input("Enter your Number to find squre it : "))
 
-def finder5(adad):
-  adad_str = str(adad)
-  tedad =0
-  for x in range(len(adad_str)):
-    if adad_str[x] == "5":
-      tedad=tedad+1
+def findSqure(numS):
+   
+   sqrF = numS**2
+   
+   return sqrF
 
-  return tedad     
 
-taded_kol =0
 
-for i in range(1,1001):
-   taded_kol =taded_kol+ finder5(i)
-
-print(taded_kol)
+print(findSqure(numS))
